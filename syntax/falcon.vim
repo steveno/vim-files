@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Falcon
 " Maintainer: Steven Oliver <oliver.steven@gmail.com>
-" Website: 
+" Website: http://github.com/soliver/vim-files/
 if version < 600
   syntax clear
 elseif exists("b:current_syntax")
@@ -53,15 +53,10 @@ syn keyword falconRepeat forlast formiddle forfirst
 syn keyword falconBool true false nill
 
 " Various types of comments.
-if exists("c_comment_strings")
-  syntax match falconCommentSkip contained "^\s*\*\($\|\s\+\)"
-  syntax region falconCommentString contained start=+L\="+ skip=+\\\\\|\\"+ end=+"+ end=+\*/+me=s-1 contains=falconCommentSkip
-  syntax region falconComment2String contained start=+L\="+ skip=+\\\\\|\\"+ end=+"+ end="$"
-  syntax region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconComment2String,falconCharacter,falconNumbersCom,falconSpaceError
-  syntax region falconCommentL start="//" skip="\\$" end="$" keepend contains=@falconCommentGroup,falconComment2String,falconCharacter,falconNumbersCom,falconSpaceError,@Spell
-else
-  syntax region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconSpaceError
-endif
+
+syntax match falconCommentSkip contained "^\s*\*\($\|\s\+\)"
+syntax region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconNumbersCom,falconSpaceError
+syntax region falconCommentL start="//" end="$" keepend contains=@falconCommentGroup,falconNumbersCom,falconSpaceError
 
 syn sync ccomment falconComment
 
@@ -72,7 +67,7 @@ syn match falconIntLiteral contained "[+-]\=\d\+"
 syn match falconFloatLiteral contained "[+-]\=\d\+\.\d*"
 syn match falconFloatLiteral contained "[+-]\=\d*\.\d*"
 syn match falconString  "'\([^']\|''\)*'"
-syn region falconString	start=+L\="+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end='$' contains=@Spell
+syn region falconString	start=+L\="+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end='$'
 
 " Syntax Synchronizing
 syn sync minlines=10 maxlines=100
@@ -106,4 +101,3 @@ if version >= 600 || !exists("did_falcon_syn_inits")
 endif
 
 let b:current_syntax = "falcon"
-
