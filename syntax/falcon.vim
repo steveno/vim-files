@@ -29,23 +29,28 @@ syn match   falconOperator "\(<=\|>=\|=>\|\.\.\|<<\|>>\|\"\)"
 " Todo.
 syn keyword falconTodo TODO FIXME XXX DEBUG NOTE
 
-syn case ignore
+syn case match
 
 " Keywords.
-syn keyword falconKeyword BREAK CONTINUE DROPPING RETURN LAUNCH FROM GLOBAL
-syn keyword falconKeyword CONST SELF SENDER CATCH RAISE GIVE CASE DEFAULT
-syn keyword falconKeyword PASS LAMBDA DEF DIRECTIVE LOAD EXPORT 
-syn keyword falconKeyword FUNCTION INNERFUNC INIT STATIC ATTRIBUTES FORFIRST 
-syn keyword falconKeyword ENUM TRY CLASS SWITCH SELECT OBJECT
-syn keyword falconKeyword EXIT PRINTL
+syn keyword falconKeyword break continue dropping return launch from global
+syn keyword falconKeyword const self sender catch raise give 
+syn keyword falconKeyword pass lambda def directive load export 
+syn keyword falconKeyword function innerfunc init static attributes  
+syn keyword falconKeyword enum try class object
+syn keyword falconKeyword exit launch len
+syn keyword falconKeyword print printl provides
 
 " Conditionals.
-syn keyword falconConditional IF ELIF ELSE END
-syn match   falconConditional "END\s\IF"
+syn keyword falconConditional if elif else end
+syn keyword falconConditional switch select case default
+syn match   falconConditional "end\s\if"
 
 " Loops.
-syn keyword falconRepeat LOOP WHILE FOR
-syn keyword falconKeyword FORLAST FORMIDDLE 
+syn keyword falconRepeat loop while for
+syn keyword falconRepeat forlast formiddle forfirst
+
+" Booleans
+syn keyword falconBool true false nill
 
 " Various types of comments.
 if exists("c_comment_strings")
@@ -66,7 +71,6 @@ syn match falconNumbersCom contained transparent "\<[+-]\=\d\|[+-]\=\.\d" contai
 syn match falconIntLiteral contained "[+-]\=\d\+"
 syn match falconFloatLiteral contained "[+-]\=\d\+\.\d*"
 syn match falconFloatLiteral contained "[+-]\=\d*\.\d*"
-syn match falconCharacter    "'[^']'"
 syn match falconString  "'\([^']\|''\)*'"
 syn region falconString	start=+L\="+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end='$' contains=@Spell
 
@@ -86,16 +90,17 @@ if version >= 600 || !exists("did_falcon_syn_inits")
   HiLink falconCommentString	String
   HiLink falconTodo		Todo
   HiLink falconConditional      Keyword
-  HiLink falconRepeat           Keyword
+  HiLink falconRepeat           Repeat
   HiLink falconcommentSkip      Comment
   HiLink falconComment          Comment
+  HiLink falconCommentL		Comment
   HiLink falconOperator         Operator
   HiLink falconSymbol           Normal
   HiLink falconSpaceError       Error
   HiLink falconIntLiteral       Number
   HiLink falconFloatLiteral     Number
-  HiLink falconCharacter        Character
   HiLink falconString           String
+  HiLink falconBool		Constant
 
   delcommand HiLink
 endif
