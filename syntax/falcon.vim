@@ -52,15 +52,14 @@ syn keyword falconRepeat forlast formiddle forfirst
 " Booleans
 syn keyword falconBool true false nill
 
-" Various types of comments.
-
+" Comments.
 syntax match falconCommentSkip contained "^\s*\*\($\|\s\+\)"
-syntax region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconNumbersCom,falconSpaceError
-syntax region falconCommentL start="//" end="$" keepend contains=@falconCommentGroup,falconNumbersCom,falconSpaceError
+syntax region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconSpaceError
+syntax region falconCommentL start="//" end="$" keepend contains=@falconCommentGroup,falconSpaceError
 
 syn sync ccomment falconComment
 
-" Various types of literals.
+" Literals.
 syn match falconNumbers transparent "\<[+-]\=\d\|[+-]\=\.\d" contains=falconIntLiteral,falconFloatLiteral
 syn match falconNumbersCom contained transparent "\<[+-]\=\d\|[+-]\=\.\d" contains=falconIntLiteral,falconFloatLiteral
 syn match falconIntLiteral contained "[+-]\=\d\+"
