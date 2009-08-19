@@ -1,7 +1,8 @@
 " Vim syntax file
 " Language: Falcon
 " Maintainer: Steven Oliver <oliver.steven@gmail.com>
-" Website: http://github.com/soliver/vim-files/
+" Website: git://github.com/soliver/vim-files.git
+
 if version < 600
   syntax clear
 elseif exists("b:current_syntax")
