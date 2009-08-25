@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Falcon
 " Maintainer: Steven Oliver <oliver.steven@gmail.com>
-" Website: git://github.com/soliver/vim-files.git
+" Website: http://github.com/steveno/vim-files/blob/master/syntax/falcon.vim
 
 if version < 600
   syntax clear
