@@ -19,6 +19,7 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.ps1	setfiletype powershell
     au! BufRead,BufNewFile *.ics	setfiletype icalendar
     au! BufRead,BufNewFile *.fal        setfiletype falcon
+    au! BufRead,BufNewFile *.exheres-0  setfiletype exheres-0
 augroup END
 
 " Turn off spellchecking for ics files
