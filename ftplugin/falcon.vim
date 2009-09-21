@@ -15,5 +15,7 @@ setlocal shiftwidth=4
 setlocal expandtab
 setlocal fileencoding=utf-8
 
-" vim: set et ts=4 :
+"---------------------------------------------
+" vim: set sw=4 sts=4 et tw=80 :
+"
 

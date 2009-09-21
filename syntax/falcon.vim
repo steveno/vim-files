@@ -111,3 +111,8 @@ if version >= 600 || !exists("did_falcon_syn_inits")
 endif
 
 let b:current_syntax = "falcon"
+
+"---------------------------------------------
+" vim: set sw=4 sts=4 et tw=80 :
+"
+

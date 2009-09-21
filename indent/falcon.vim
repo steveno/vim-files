@@ -92,4 +92,7 @@ function FalconGetIndent()
   return ind + chg
 endfunction
 
-" vim:sw=2 tw=130
+"---------------------------------------------
+" vim: set sw=4 sts=4 et tw=80 :
+"
+
