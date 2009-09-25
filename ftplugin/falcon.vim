@@ -8,7 +8,7 @@ if &compatible || v:version < 700
     finish
 endif
 
-runtime! ftplugin/sh.vim
+runtime! ftplugin/falcon.vim
 
 setlocal tabstop=4
 setlocal shiftwidth=4
