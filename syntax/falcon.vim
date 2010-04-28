@@ -42,7 +42,7 @@ syn keyword falconKeyword exit launch len
 syn keyword falconKeyword print printl provides
 
 " Other keywords
-syn keyword falconKeyword and or not in notin to as has hasnt provides
+syn keyword falconKeyword in notin to as has hasnt provides
 syn keyword falconKeyword Error TraceStep SyntaxError CodeError 
 syn keyword falconKeyword RangeError MathError IoError TypeError
 syn keyword falconKeyword ParamError CloneError InterruprtedError
@@ -50,7 +50,7 @@ syn keyword falconKeyword List all any allp anyp eval choice xamp
 syn keyword falconKeyword iff list cascade dolist eq
 
 " Conditionals.
-syn keyword falconConditional if elif else end and or
+syn keyword falconConditional if elif else end and or not
 syn keyword falconConditional switch select case default
 syn match   falconConditional "end\s\if"
 
