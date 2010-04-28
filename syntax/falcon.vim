@@ -50,7 +50,7 @@ syn keyword falconKeyword List all any allp anyp eval choice xamp
 syn keyword falconKeyword iff list cascade dolist eq
 
 " Conditionals.
-syn keyword falconConditional if elif else end
+syn keyword falconConditional if elif else end and or
 syn keyword falconConditional switch select case default
 syn match   falconConditional "end\s\if"
 
