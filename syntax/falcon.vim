@@ -68,8 +68,8 @@ syn keyword falconBool true false nil
 
 " Comments.
 syn match falconCommentSkip contained "^\s*\*\($\|\s\+\)"
-syn region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconSpaceError
-syn region falconCommentL start="//" end="$" keepend contains=@falconCommentGroup,falconSpaceError
+syn region falconComment start="/\*" end="\*/" contains=@falconCommentGroup,falconSpaceError, falconTodo
+syn region falconCommentL start="//" end="$" keepend contains=@falconCommentGroup,falconSpaceError, falconTodo
 syn match falconSharpBang "\%^#!.*" display
 
 syn sync ccomment falconComment
