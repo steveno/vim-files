@@ -20,7 +20,7 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.ics	setfiletype icalendar
     au! BufRead,BufNewFile *.fal        setfiletype falcon
     au! BufRead,BufNewFile *.exheres-0  setfiletype exheres-0
-    au! BufRead,BufNewFile *.hta  setfiletype html
+    au! BufRead,BufNewFile *.hta        setfiletype html
 augroup END
 
 " Turn off spellchecking for ics files
