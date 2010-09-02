@@ -28,8 +28,9 @@ if strlen(&ft) == 'icalendar'
     setlocal nospell
 endif
 
-" Make prefers tabs
+" Some languages prefers tabs
 autocmd FileType make   set noexpandtab
+autocmd FileType go     set noexpandtab
 
 " Make sure sql files get plsql syntax
 let g:sql_type_default = 'plsql'
