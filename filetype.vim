@@ -30,7 +30,7 @@ endif
 
 " Some languages prefers tabs
 autocmd FileType make   set noexpandtab
-autocmd FileType go     set noexpandtab
+autocmd FileType go     set noexpandtab sw=8 sts=8
 
 " Make sure sql files get plsql syntax
 let g:sql_type_default = 'plsql'
