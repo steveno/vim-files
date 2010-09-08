@@ -2,7 +2,6 @@ scriptencoding utf-8
 
 "---------------------------------------------
 " Filetype settings file for Steven Oliver
-" Last Updated - 12/05/2008
 "---------------------------------------------
 
 " Filetype settings
