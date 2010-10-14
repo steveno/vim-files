@@ -33,8 +33,5 @@ autocmd FileType go     set noexpandtab sw=8 sts=8
 " Make sure sql files get plsql syntax
 let g:sql_type_default = 'plsql'
 
-
-"---------------------------------------------
 " vim: set sw=4 sts=4 et tw=80 :
-"
 
