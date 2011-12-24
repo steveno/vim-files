@@ -11,15 +11,15 @@ endif
 
 " Associate unknown filetypes
 augroup filetypedetect
-    au! BufRead,BufNewFile *.buf	        setfiletype plsql
-    au! BufRead,BufNewFile *.prog	        setfiletype perl
-    au! BufRead,BufNewFile *.prc	        setfiletype plsql
-    au! BufRead,BufNewFile *.pkg            setfiletype plsql
-    au! BufRead,BufNewFile *.ps1	        setfiletype powershell
-    au! BufRead,BufNewFile *.ics    	    setfiletype icalendar
-    au! BufRead,BufNewFile *.exheres-0      setfiletype exheres-0
-    au! BufRead,BufNewFile *.hta            setfiletype html
-    au! BufRead,BufNewFile *.vala,*.vapi    setfiletype vala
+    au! BufRead,BufNewFile *.buf                setfiletype plsql
+    au! BufRead,BufNewFile *.prog               setfiletype perl
+    au! BufRead,BufNewFile *.prc                setfiletype plsql
+    au! BufRead,BufNewFile *.pkg                setfiletype plsql
+    au! BufRead,BufNewFile *.ps1                setfiletype powershell
+    au! BufRead,BufNewFile *.ics                setfiletype icalendar
+    au! BufRead,BufNewFile *.exheres-0          setfiletype exheres-0
+    au! BufRead,BufNewFile *.hta                setfiletype html
+    au! BufRead,BufNewFile *.vala,*.vapi        setfiletype vala
 augroup END
 
 " Turn off spellchecking for ics files
