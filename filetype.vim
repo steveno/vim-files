@@ -30,10 +30,8 @@ endif
 " Some languages prefers tabs
 autocmd FileType make           set noexpandtab
 autocmd FileType go             set noexpandtab sw=8 sts=8
+autocmd FileType sql            set expandtab sw=2 sts=2
 autocmd BufRead *.vala,*.vapi   set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-
-" Make sure sql files get plsql syntax
-let g:sql_type_default = 'plsql'
 
 
 " vim: set sw=4 sts=4 et tw=80 :
