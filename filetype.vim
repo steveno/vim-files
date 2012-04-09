@@ -20,6 +20,7 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.exheres-0          setfiletype exheres-0
     au! BufRead,BufNewFile *.hta                setfiletype html
     au! BufRead,BufNewFile *.vala,*.vapi        setfiletype vala
+    au! BufRead,BufNewFile wscript*             setfiletype=python
 augroup END
 
 " Turn off spellchecking for ics files
