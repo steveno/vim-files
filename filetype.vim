@@ -18,7 +18,7 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.ps1                setfiletype powershell        
     au! BufRead,BufNewFile *.hta                setfiletype html
     au! BufRead,BufNewFile *.vala,*.vapi        setfiletype vala
-    au! BufRead,BufNewFile wscript*             setfiletype=python
+    au! BufRead,BufNewFile wscript*             setfiletype python
 augroup END
 
 " Turn off spellchecking for ics files
