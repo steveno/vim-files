@@ -1,7 +1,7 @@
 scriptencoding utf-8
 
 "---------------------------------------------
-" Filetype settings file for Steven Oliver
+" File type settings file for Steven Oliver
 "---------------------------------------------
 
 " Filetype settings
@@ -9,7 +9,7 @@ if exists("did_load_filetypes")
     finish
 endif
 
-" Associate unknown filetypes
+" Associate unknown file types
 augroup filetypedetect
     au! BufRead,BufNewFile *.buf                setfiletype plsql
     au! BufRead,BufNewFile *.prog               setfiletype perl
@@ -21,7 +21,7 @@ augroup filetypedetect
     au! BufRead,BufNewFile wscript*             setfiletype python
 augroup END
 
-" Turn off spellchecking for ics files
+" Turn off spell checking for ics files
 if strlen(&ft) == 'icalendar'
     setlocal nospell
 endif
