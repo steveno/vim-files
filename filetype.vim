@@ -19,12 +19,8 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.hta                setfiletype html
     au! BufRead,BufNewFile *.vala,*.vapi        setfiletype vala
     au! BufRead,BufNewFile wscript*             setfiletype python
+    au! BufRead,BufNewFile *.fal,*.ftd          setfiletype falcon
 augroup END
-
-" Turn off spell checking for ics files
-if strlen(&ft) == 'icalendar'
-    setlocal nospell
-endif
 
 " Some languages prefers tabs
 autocmd FileType make           set noexpandtab
