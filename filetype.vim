@@ -15,7 +15,6 @@ augroup filetypedetect
     au! BufRead,BufNewFile *.prog               setfiletype perl
     au! BufRead,BufNewFile *.prc                setfiletype plsql
     au! BufRead,BufNewFile *.pkg                setfiletype plsql
-    au! BufRead,BufNewFile *.ps1                setfiletype powershell        
     au! BufRead,BufNewFile *.hta                setfiletype html
     au! BufRead,BufNewFile *.vala,*.vapi        setfiletype vala
     au! BufRead,BufNewFile wscript*             setfiletype python
@@ -30,4 +29,3 @@ autocmd BufRead *.vala,*.vapi   set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m sw=8
 
 
 " vim: set sw=4 sts=4 et tw=80 :
-
