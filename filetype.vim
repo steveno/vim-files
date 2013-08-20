@@ -1,9 +1,5 @@
 scriptencoding utf-8
 
-"---------------------------------------------
-" File type settings file for Steven Oliver
-"---------------------------------------------
-
 " Filetype settings
 if exists("did_load_filetypes")
     finish
